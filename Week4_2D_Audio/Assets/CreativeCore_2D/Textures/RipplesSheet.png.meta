@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: f4f71289c4e3949428e111f777f665f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1809638948723219799
+    second: RipplesSheet_0
+  - first:
+      213: 5172392839016418134
+    second: RipplesSheet_1
+  - first:
+      213: -8088208253539490546
+    second: RipplesSheet_2
+  - first:
+      213: -4671270510257320164
+    second: RipplesSheet_3
+  - first:
+      213: 9188995265182539147
+    second: RipplesSheet_4
+  - first:
+      213: 8227599010395531912
+    second: RipplesSheet_5
+  - first:
+      213: -3631181335291807628
+    second: RipplesSheet_6
+  - first:
+      213: 1390602098946065751
+    second: RipplesSheet_7
+  - first:
+      213: 7730675995125225547
+    second: RipplesSheet_8
+  - first:
+      213: -2455941603882250629
+    second: RipplesSheet_9
+  - first:
+      213: -7275274095444967337
+    second: RipplesSheet_10
+  - first:
+      213: 8120304861478084882
+    second: RipplesSheet_11
+  - first:
+      213: 3106543810534622609
+    second: RipplesSheet_12
+  - first:
+      213: -6929787731480125855
+    second: RipplesSheet_13
+  - first:
+      213: 4441760050569933519
+    second: RipplesSheet_14
+  - first:
+      213: -8001890506498587924
+    second: RipplesSheet_15
+  - first:
+      213: 3325307779965872552
+    second: RipplesSheet_16
+  - first:
+      213: 5405432404798222628
+    second: RipplesSheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RipplesSheet_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 909
+        width: 59
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a224a9c6fed2e6e0800000000000000
+      internalID: -1809638948723219799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_1
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 881
+        width: 130
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b0950f1e708c740800000000000000
+      internalID: 5172392839016418134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_2
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 839
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0565625279e0cf80800000000000000
+      internalID: -8088208253539490546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_3
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 843
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fca5a68305c2fb0800000000000000
+      internalID: -4671270510257320164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 889
+        width: 12
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d93ff128ed58f70800000000000000
+      internalID: 9188995265182539147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_5
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 887
+        width: 53
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88a2bf055bd4e2270800000000000000
+      internalID: 8227599010395531912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_6
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 834
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47837ea70d37b9dc0800000000000000
+      internalID: -3631181335291807628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_7
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 819
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755c793cd396c4310800000000000000
+      internalID: 1390602098946065751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_8
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 852
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b481413dbd0e84b60800000000000000
+      internalID: 7730675995125225547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 811
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ece779f1ebaedd0800000000000000
+      internalID: -2455941603882250629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_10
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 811
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750c66991c8090b90800000000000000
+      internalID: -7275274095444967337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_11
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 643
+        width: 7
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21167409f3e11b070800000000000000
+      internalID: 8120304861478084882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 646
+        width: 7
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195ca12f229ac1b20800000000000000
+      internalID: 3106543810534622609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_13
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 604
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e544816c274df90800000000000000
+      internalID: -6929787731480125855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_14
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 582
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2fdb78b3d44ad30800000000000000
+      internalID: 4441760050569933519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 589
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce2c49ceaf293f090800000000000000
+      internalID: -8001890506498587924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 542
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a965b1cecdd52e20800000000000000
+      internalID: 3325307779965872552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RipplesSheet_17
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 542
+        width: 73
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42132690224f30b40800000000000000
+      internalID: 5405432404798222628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RipplesSheet_0: -1809638948723219799
+      RipplesSheet_1: 5172392839016418134
+      RipplesSheet_10: -7275274095444967337
+      RipplesSheet_11: 8120304861478084882
+      RipplesSheet_12: 3106543810534622609
+      RipplesSheet_13: -6929787731480125855
+      RipplesSheet_14: 4441760050569933519
+      RipplesSheet_15: -8001890506498587924
+      RipplesSheet_16: 3325307779965872552
+      RipplesSheet_17: 5405432404798222628
+      RipplesSheet_2: -8088208253539490546
+      RipplesSheet_3: -4671270510257320164
+      RipplesSheet_4: 9188995265182539147
+      RipplesSheet_5: 8227599010395531912
+      RipplesSheet_6: -3631181335291807628
+      RipplesSheet_7: 1390602098946065751
+      RipplesSheet_8: 7730675995125225547
+      RipplesSheet_9: -2455941603882250629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
