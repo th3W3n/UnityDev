@@ -14,6 +14,13 @@ public class GM : MonoBehaviour
     private const string HighScoreKey = "HighScore";
     private int highScore;
 
+    [SerializeField] private AudioClip hitWallClip;
+    [SerializeField] private AudioClip obstaclesCollideClip;
+    [SerializeField] private AudioClip loseClip;
+    [SerializeField] private AudioClip beepClip;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioSource beepSource;
+
     private void Awake()
     {
         Instance = this;
@@ -74,5 +81,14 @@ public class GM : MonoBehaviour
         }
         if (restartBtn != null)
             restartBtn.style.display = DisplayStyle.Flex;
+    }
+
+    public void PlaySFX_HitWall() => source.PlayOneShot(hitWallClip);
+    public void PlaySFX_ObstaclesCollide() => source.PlayOneShot(obstaclesCollideClip, 0.4f);
+    public void PlaySFX_GameLose() => source.PlayOneShot(loseClip);
+    public void PlaySFX_Beep(float _pitch)
+    {
+        beepSource.pitch = _pitch;
+        beepSource.PlayOneShot(beepClip, 0.5f);
     }
 }

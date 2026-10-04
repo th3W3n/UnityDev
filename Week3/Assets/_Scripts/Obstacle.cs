@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
@@ -9,6 +10,12 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private float maxSpinSpeed = 10.0f;
     [SerializeField] private GameObject collisionParticle;
 
+    public static readonly List<Obstacle> All = new();
+    public Collider2D Col { get; private set; }
+
+    private void Awake() => Col = GetComponent<Collider2D>();
+    private void OnEnable() => All.Add(this);
+    private void OnDisable() => All.Remove(this);
     private void Start()
     {
         float randSize = Random.Range(minSize, maxSize);
@@ -25,6 +32,7 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            GM.Instance.PlaySFX_ObstaclesCollide();
             if (collisionParticle != null)
             {
                 Vector2 hitSpot = collision.GetContact(0).point;
