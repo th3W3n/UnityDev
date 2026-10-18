@@ -4,7 +4,6 @@ using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private GameObject boosterFlame;
     [SerializeField] private float thrustForce = 1f;
     [SerializeField] private float maxSpeed = 1f;
     private Rigidbody2D rb;
@@ -18,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private Label scoreText;
 
     [SerializeField] private GameObject explosion;
+    [SerializeField] private ParticleSystem trailPS;
 
     [Header("Beep Sounds")]
     [SerializeField] private float farDetectDist = 5f;
@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     private Collider2D col;
 
+
+
     private void Awake()
     {
         panel.RegisterUIReloadCallback(OnUIReload);
@@ -40,7 +42,6 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        boosterFlame.SetActive(false);
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
     }
@@ -62,10 +63,9 @@ public class PlayerController : MonoBehaviour
                 rb.linearVelocity = rb.linearVelocity.normalized * maxSpeed;
         }
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-            boosterFlame.SetActive(true);
-        else if (Mouse.current.leftButton.wasReleasedThisFrame)
-            boosterFlame.SetActive(false);
+        bool isMoving = Mouse.current.leftButton.isPressed;
+        if (isMoving && !trailPS.isEmitting) trailPS.Play();
+        else if (!isMoving && trailPS.isEmitting) trailPS.Stop();
 
         HandleBeep();
     }
