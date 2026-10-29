@@ -9,10 +9,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private AudioClip loseClip;
     private AudioSource source;
 
+    private Vector3 initPos;
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
+        initPos = transform.position;
     }
 
     private void Update()
@@ -22,4 +25,9 @@ public class EnemyController : MonoBehaviour
     }
 
     public void PlayGameLose() => source.PlayOneShot(loseClip);
+    public void ResetState()
+    {
+        gameObject.SetActive(true);
+        agent.Warp(initPos);
+    }
 }

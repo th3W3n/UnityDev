@@ -9,10 +9,6 @@ public class PlayerController : MonoBehaviour
     private float movementX, movementZ;
     [SerializeField] private float moveSpeed = 5.0f;
 
-    [SerializeField] private TextMeshProUGUI countTxt;
-    private int count;
-    [SerializeField] private GameObject winTxtGo;
-
     [SerializeField] private GameObject enemy;
 
     [SerializeField] private AudioClip hitWallClip;
@@ -25,14 +21,20 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private VisualEffect winFX;
     [SerializeField] private ParticleSystem trailPS;
 
+    [SerializeField] private Transform pickupsParent;
+
+    private Vector3 initPos;
+
+    private int count;
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
         count = 0;
         SetCountText();
-        winTxtGo.SetActive(false);
-        winTxtGo.GetComponent<TextMeshProUGUI>().text = "You Win!!!";
+
+        initPos = transform.position;
     }
 
     private void FixedUpdate()
@@ -66,8 +68,8 @@ public class PlayerController : MonoBehaviour
         if (count >= 12)
         {
             source.PlayOneShot(winClip);
-            winTxtGo.SetActive(true);
-            Destroy(enemy);
+            GM.Instance.EndGameUI(true);
+            enemy.SetActive(false);
             winFX.Play();
         }
     }
@@ -79,16 +81,23 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             collision.gameObject.transform.parent.GetComponent<EnemyController>().PlayGameLose();
-            winTxtGo.SetActive(true);
-            winTxtGo.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+            GM.Instance.EndGameUI(false);
             explosion.transform.position = transform.position;
             explosion.Play();
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
-    private void SetCountText()
+    private void SetCountText() => GM.Instance.countTxt.text = "Count: " + count.ToString();
+    public void ResetState()
     {
-        countTxt.text = "Count: " + count.ToString();
+        gameObject.SetActive(true);
+        rb.position = initPos;
+        rb.linearVelocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+        count = 0;
+        SetCountText();
+        foreach (Transform pickup in pickupsParent.transform)
+            pickup.gameObject.SetActive(true);
     }
 }
